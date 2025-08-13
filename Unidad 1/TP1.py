@@ -1,0 +1,75 @@
+print("Ejercicio 1")
+print("Hola Mundo!")
+print()
+
+print("Ejercicio 2")
+nombre = input("Ingrese su nombre: ")
+print(f"Hola {nombre}!")
+print()
+
+print("Ejercicio 3")
+nombre3 = input("Ingrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+edad = input("Ingrese su edad: ")
+residencia = input("Ingrese su lugar de recidencia: ")
+print(f"Soy {nombre3} {apellido}, tengo {edad} años y vivo en {residencia}")
+print()
+
+print("Ejercicio 4")
+pi=3.1416
+radio = float(input("Ingrese el radio de un círculo: "))
+area = pi * radio * radio
+perimetro = 2 * pi * radio
+print(f"El área del círculo es: {area} y su perímetro: {perimetro}")
+print()
+
+print("Ejercicio 5")
+segundos = int(input("Ingrese una cantidad de segundos: "))
+horas = segundos/(60 * 60)
+print(f"La cantidad de horas es { horas }")
+print()
+
+print("Ejercicio 6")
+numero = int(input("Ingrese un número entero: "))
+print(f"La table del {numero} es:")
+print(f" {numero} x 1 = {numero*1}")
+print(f" {numero} x 2 = {numero*2}")
+print(f" {numero} x 3 = {numero*3}")
+print(f" {numero} x 4 = {numero*4}")
+print(f" {numero} x 5 = {numero*5}")
+print(f" {numero} x 6 = {numero*6}")
+print(f" {numero} x 7 = {numero*7}")
+print(f" {numero} x 8 = {numero*8}")
+print(f" {numero} x 9 = {numero*9}")
+print(f" {numero} x 10 = {numero*10}")
+print()
+
+print("Ejercicio 7")
+numeroA = int(input("Ingrese un número entero: "))
+numeroB = int(input("Ingrese otro número entero: "))
+print(f"          Su suma es: {numeroA} + {numeroB} = {numeroA + numeroB}")
+print(f"      Su división es: {numeroA} / {numeroB} = {numeroA / numeroB}")
+print(f"Su multiplicación es: {numeroA} x {numeroB} = {numeroA * numeroB}")
+print(f"         Su resta es: {numeroA} - {numeroB} = {numeroA - numeroB}")
+print()
+
+print("Ejercicio 8")
+altura = float(input("Ingrese su altura en metros: "))
+peso = float(input("Ingrese su peso en Kg: "))
+imc = peso/(altura * altura)
+print(f"Su índice de masa corporal es de: {imc}")
+print()
+
+print("Ejercicio 9")
+celsius = float(input("Ingrese la temperatura en grados Celsius: "))
+fahrenheit = celsius * 9 / 5 + 32
+print(f"La temperatura en Fahrenheit es de : {fahrenheit} grados")
+print()
+
+print("Ejercicio 10")
+numeroA = float(input("Ingrese un número: "))
+numeroB = float(input("Ingrese otro número: "))
+numeroC = float(input("Ingrese un último número: "))
+promedio = (numeroA + numeroB + numeroC) / 3
+print(f"El promedio de los 3 números es: {promedio}")
+print()

@@ -1,77 +1,77 @@
-# print("Ejercicio 1")
-# edad = int(input("Ingrese su edad: "))
-# if edad >= 18 :
-#     print("Es mayor de edad")
-# print()
+print("Ejercicio 1")
+edad = int(input("Ingrese su edad: "))
+if edad >= 18 :
+    print("Es mayor de edad")
+print()
 
-# print("Ejercicio 2")
-# nota = int(input("Ingrese su nota: "))
-# if nota >= 6 :
-#     print("Aprobado")
-# else :
-#     print("Desaprobado")
-# print()
+print("Ejercicio 2")
+nota = int(input("Ingrese su nota: "))
+if nota >= 6 :
+    print("Aprobado")
+else :
+    print("Desaprobado")
+print()
 
-# print("Ejercicio 3")
-# numero = int(input("Ingrese un número: "))
-# if numero % 2 == 0 :
-#     print("Ha ingresado un número par")
-# else :
-#     print("Por favor, ingrese un número par")
-# print()
+print("Ejercicio 3")
+numero = int(input("Ingrese un número: "))
+if numero % 2 == 0 :
+    print("Ha ingresado un número par")
+else :
+    print("Por favor, ingrese un número par")
+print()
 
-# print("Ejercicio 4")
-# edad = int(input("Ingrese su edad: "))
-# if edad < 12 :
-#     print("Niño/a")
-# elif edad < 18 :
-#     print("Adolescente")
-# elif edad < 30 :
-#     print("Adulto/a joven")
-# else :
-#     print("Adulto/a")
-# print()
+print("Ejercicio 4")
+edad = int(input("Ingrese su edad: "))
+if edad < 12 :
+    print("Niño/a")
+elif edad < 18 :
+    print("Adolescente")
+elif edad < 30 :
+    print("Adulto/a joven")
+else :
+    print("Adulto/a")
+print()
 
-# print("Ejercicio 5")
-# password = input("Ingrese su contraseña: ")
-# longitud = len(password)
-# if  longitud < 8 :
-#     print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
-# elif longitud <= 14 :
-#     print("Ha ingresado una contraseña correcta")
-# else :
-#     print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
-# print()
+print("Ejercicio 5")
+password = input("Ingrese su contraseña: ")
+longitud = len(password)
+if  longitud < 8 :
+    print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
+elif longitud <= 14 :
+    print("Ha ingresado una contraseña correcta")
+else :
+    print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
+print()
 
-# print("Ejercicio 6")
-# from statistics import mode, median, mean
-# import random
+print("Ejercicio 6")
+from statistics import mode, median, mean
+import random
 
-# numeros_aleatorios = [random.randint(1,100) for i in range(50)]
-# print(numeros_aleatorios)
+numeros_aleatorios = [random.randint(1,100) for i in range(50)]
+print(numeros_aleatorios)
 
-# moda = mode(numeros_aleatorios)
-# mediana = median(numeros_aleatorios)
-# media = mean(numeros_aleatorios)
+moda = mode(numeros_aleatorios)
+mediana = median(numeros_aleatorios)
+media = mean(numeros_aleatorios)
 
-# if media > mediana > moda :
-#     print("Tiene sesgo positivo o a la derecha")
-# elif media < mediana < moda :
-#     print("Tiene sesgo negativo o a la izquierda")
-# elif media == mediana == moda :
-#     print("Sin sesgo")
-# else : 
-#     print("No se cumplen las condiciones de sesgo")
-# print()
+if media > mediana > moda :
+    print("Tiene sesgo positivo o a la derecha")
+elif media < mediana < moda :
+    print("Tiene sesgo negativo o a la izquierda")
+elif media == mediana == moda :
+    print("Sin sesgo")
+else : 
+    print("No se cumplen las condiciones de sesgo")
+print()
 
-# print("Ejercicio 7")
-# palabra = input("Ingrese una palabra: ")
-# ultima_letra = palabra[-1].lower()
-# if ultima_letra == "a" or ultima_letra == "e" or ultima_letra == "i" or ultima_letra == "o" or ultima_letra == "u" :
-#     print(f"{palabra}!")
-# else :
-#     print(palabra)
-# print()
+print("Ejercicio 7")
+palabra = input("Ingrese una palabra: ")
+ultima_letra = palabra[-1].lower()
+if ultima_letra == "a" or ultima_letra == "e" or ultima_letra == "i" or ultima_letra == "o" or ultima_letra == "u" :
+    print(f"{palabra}!")
+else :
+    print(palabra)
+print()
 
 print("Ejercicio 8")
 nombre = input("Ingrese su nombre: ")
@@ -90,4 +90,48 @@ elif opcion == "3" :
     print(nombre.title())
 else :
     print(nombre)
+print()
+
+print("Ejercicio 9")
+magnitud = float(input("Ingrese la magnitud del terremoto: "))
+
+if magnitud < 3 :
+    print("\"Muy leve\"")
+elif magnitud < 4 :
+    print("\"Leve\"")
+elif magnitud < 5 :
+    print("\"Moderado\"")
+elif magnitud < 6 :
+    print("\"Fuerte\"")
+elif magnitud < 7 :
+    print("\"Muy fuerte\"")
+else :
+    print("\"Extremo\"")
+print()
+
+print("Ejercicio 10")
+emisferio = input("Ingrese el emisferio donde se encuentre N/S: ")
+mes = int(input("Ingrese el mes: "))
+dia = int(input("Ingrese el día: "))
+
+if emisferio.lower() == 'n' :
+    if (mes == 12 and dia >= 21) or (mes == 1) or (mes == 2) or (mes == 3 and dia <= 20) :
+        print("Invierno")
+    elif (mes == 3 and dia >= 21) or (mes == 4) or (mes == 5) or (mes == 6 and dia <= 20) :
+        print("Primavera")
+    elif (mes == 6 and dia >= 21) or (mes == 7) or (mes == 8) or (mes == 9 and dia <= 20) :
+        print("Verano")
+    else :
+        print("Otoño")
+elif emisferio.lower() == 's' :
+    if (mes == 12 and dia >= 21) or (mes == 1) or (mes == 2) or (mes == 3 and dia <= 20) :
+        print("Verano")
+    elif (mes == 3 and dia >= 21) or (mes == 4) or (mes == 5) or (mes == 6 and dia <= 20) :
+        print("Otoño")
+    elif (mes == 6 and dia >= 21) or (mes == 7) or (mes == 8) or (mes == 9 and dia <= 20) :
+        print("Invierno")
+    else :
+        print("Primavera")
+else : 
+    print("Ingrese n (norte) o s (sur)")
 print()
